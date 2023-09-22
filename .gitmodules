@@ -1,3 +1,6 @@
 [submodule "src/create3_sim"]
 	path = src/create3_sim
 	url = https://github.com/iRobotEducation/create3_sim.git
+[submodule "src/navigation2"]
+	path = src/navigation2
+	url = https://github.com/ros-planning/navigation2.git
