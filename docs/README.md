@@ -13,6 +13,9 @@ Install xtensor-dev
 https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-20-04
 
 
+# Using CoralAI
+https://coral.ai/docs/accelerator/get-started/
+
 # Documentation on running create3_sim:
 https://github.com/iRobotEducation/create3_sim/tree/humble
 
