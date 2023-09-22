@@ -2,7 +2,10 @@
 
 # Installation
 sudo apt install python3-colcon-common-extensions
+
 sudo apt install python3-vcstool
+
+sudo apt-get install build-essential
 
 Install xtensor-dev
 
