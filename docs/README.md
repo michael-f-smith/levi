@@ -9,6 +9,8 @@ sudo apt-get install build-essential
 
 Install xtensor-dev
 
+# Adding Swapfile:
+https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-20-04
 
 
 # Documentation on running create3_sim:
