@@ -21,3 +21,8 @@ https://coral.ai/docs/accelerator/get-started/
 # Documentation on running create3_sim:
 https://github.com/iRobotEducation/create3_sim/tree/humble
 
+
+# Nav2 Dependencies
+
+sudo apt-get install -y libbondcpp-dev
+
