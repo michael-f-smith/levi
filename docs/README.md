@@ -47,7 +47,7 @@ https://github.com/iRobotEducation/create3_sim/tree/humble
 
 # Nav2 Dependencies
 ```
-sudo apt-get install -y libbondcpp-dev
+sudo apt-get install -y libbondcpp-dev  # In actuality, I ended up using rosdep and importing things from .repos file
 
 sudo apt install ros-navigation2
 
