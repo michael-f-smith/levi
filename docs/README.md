@@ -41,6 +41,23 @@ sudo apt-get install libedgetpu1-std
 sudo apt-get install python3-pycoral
 ```
 
+4.1 Installing pyenv
+```
+sudo apt-get install -y make build-essential libssl-dev zlib1g-dev \
+libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev \
+libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python-openssl
+
+curl https://pyenv.run | bash
+
+# Then run anything that gets printed to the terminal
+
+# Print the python versions available in pyenv
+pyenv install --list
+
+# Install a specific version for example 3.7.2
+pyenv install -v 3.7.2
+```
+
 # Documentation on running create3_sim:
 https://github.com/iRobotEducation/create3_sim/tree/humble
 
