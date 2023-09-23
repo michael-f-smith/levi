@@ -26,3 +26,7 @@ https://github.com/iRobotEducation/create3_sim/tree/humble
 
 sudo apt-get install -y libbondcpp-dev
 
+sudo apt install ros-navigation2
+sudo apt install ros-nav2-bringup
+
+sudo apt-get install ros-humble-turtlebot3
