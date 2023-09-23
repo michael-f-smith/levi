@@ -36,7 +36,7 @@ sudo apt-get install libedgetpu1-std
 
 3. Optional (Check above link for increasing speeds)
 
-4. INstall PyCoral Library
+4. Install PyCoral Library (requires python3.6 to python3.9 [may need to use pyenv https://realpython.com/intro-to-pyenv/])
 ```
 sudo apt-get install python3-pycoral
 ```
