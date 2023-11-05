@@ -75,3 +75,9 @@ sudo apt-get install ros-humble-turtlebot3
 
 # Roomba_rpi project
 https://github.com/process1183/roomba-rpi/blob/master/docs/roomba_remote_control.md
+
+# ROS on Steam Deck Discussion
+https://discourse.ros.org/t/ros-on-steam-deck/27283/14
+
+# RoboStack Documentation on Running ROS with Mamba
+https://robostack.github.io/GettingStarted.html
