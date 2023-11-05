@@ -4,3 +4,6 @@
 [submodule "src/navigation2"]
 	path = src/navigation2
 	url = https://github.com/ros-planning/navigation2.git
+[submodule "src/roomba-rpi"]
+	path = src/roomba-rpi
+	url = https://github.com/process1183/roomba-rpi.git
