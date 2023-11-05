@@ -72,3 +72,6 @@ sudo apt install ros-nav2-bringup
 
 sudo apt-get install ros-humble-turtlebot3
 ```
+
+# Roomba_rpi project
+https://github.com/process1183/roomba-rpi/blob/master/docs/roomba_remote_control.md
