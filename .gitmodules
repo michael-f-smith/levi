@@ -1,12 +1,21 @@
 [submodule "src/create3_sim"]
-	path = src/create3_sim
+	path = src/simulation/create3_sim
 	url = https://github.com/iRobotEducation/create3_sim.git
 [submodule "src/navigation2"]
-	path = src/navigation2
+	path = src/navigation/navigation2
 	url = https://github.com/ros-planning/navigation2.git
 [submodule "src/roomba-rpi"]
-	path = src/roomba-rpi
+	path = src/drivers/roomba-rpi
 	url = https://github.com/process1183/roomba-rpi.git
 [submodule "src/roomba-ros2"]
-	path = src/roomba-ros2
+	path = src/dependencies/roomba-ros2
 	url = https://github.com/process1183/roomba-ros2.git
+[submodule "src/dependencies/libcreate"]
+	path = src/dependencies/libcreate
+	url = https://github.com/AutonomyLab/libcreate
+[submodule "src/dependencies/create_robot"]
+	path = src/dependencies/create_robot
+	url = https://github.com/AutonomyLab/create_robot.git
+[submodule "src/dependencies/ros2_bno055"]
+	path = src/dependencies/ros2_bno055
+	url = https://github.com/process1183/ros2_bno055.git
