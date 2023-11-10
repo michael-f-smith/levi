@@ -7,3 +7,6 @@
 [submodule "src/roomba-rpi"]
 	path = src/roomba-rpi
 	url = https://github.com/process1183/roomba-rpi.git
+[submodule "src/roomba-ros2"]
+	path = src/roomba-ros2
+	url = https://github.com/process1183/roomba-ros2.git
