@@ -85,6 +85,6 @@ https://robostack.github.io/GettingStarted.html
 # Docker and ARM
 https://www.docker.com/blog/getting-started-with-docker-for-arm-on-linux/
 
-
+https://www.stereolabs.com/docs/docker/building-arm-container-on-x86/
 https://hub.docker.com/r/arm64v8/ros/
 
