@@ -95,6 +95,6 @@ https://hub.docker.com/r/arm64v8/ros/
 * Install libignition from here: https://gazebosim.org/api/math/5.0/install.html
    * Run the following to install required build packages:
     ```
-    apt update && apt install git wget build-essential libboost-system-dev libboost-thread-dev libboost-program-options-dev libboost-test-dev libbondcpp-dev libignition-math6-dev ros-humble-test-msgs
+    apt update && apt install git wget build-essential libboost-system-dev libboost-thread-dev libboost-program-options-dev libboost-test-dev libbondcpp-dev libignition-math6-dev ros-humble-test-msgs ros-humble-angles
     ```
 
