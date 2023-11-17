@@ -89,3 +89,10 @@ https://www.stereolabs.com/docs/docker/building-arm-container-on-x86/
 
 https://hub.docker.com/r/arm64v8/ros/
 
+
+# Building in arm docker container:
+* Git clone this repo
+* Install libignition from here: https://gazebosim.org/api/math/5.0/install.html
+    * This will require installing wget
+* 
+
