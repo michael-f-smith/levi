@@ -98,3 +98,14 @@ https://hub.docker.com/r/arm64v8/ros/
     apt update && apt install git wget build-essential libboost-system-dev libboost-thread-dev libboost-program-options-dev libboost-test-dev libbondcpp-dev libignition-math6-dev ros-humble-test-msgs ros-humble-angles ros-humble-control-msgs ros-humble-diagnostic-updater
     ```
 
+
+# Configuring static ip on ubuntu server on raspi:
+* https://linuxopsys.com/topics/configure-static-ip-on-ubuntu
+* https://stackoverflow.com/questions/77352932/ovsdb-server-service-from-no-where
+  ```
+  # run this first
+  sudo apt-get install linux-modules-extra-raspi
+  # run this then
+  sudo apt-get install openvswitch-switch-dpdk
+  ```
+
