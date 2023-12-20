@@ -109,3 +109,7 @@ https://hub.docker.com/r/arm64v8/ros/
   sudo apt-get install openvswitch-switch-dpdk
   ```
 
+# Running ROS2 on startup:
+* http://iotdesignshop.com/2022/11/06/how-does-the-ros2-turtlebot4-service-launch-when-the-turtlebot-boots-up/
+* https://github.com/tmux/tmux/wiki
+
