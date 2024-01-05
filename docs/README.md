@@ -116,3 +116,6 @@ https://hub.docker.com/r/arm64v8/ros/
 # Pyroombaadapter
 * https://github.com/AtsushiSakai/PyRoombaAdapter
 
+# Cameras
+* https://www.raspberrypi.com/documentation/computers/camera_software.html#building-libcamera-and-rpicam-apps
+
