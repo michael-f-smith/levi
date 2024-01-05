@@ -118,4 +118,5 @@ https://hub.docker.com/r/arm64v8/ros/
 
 # Cameras
 * https://www.raspberrypi.com/documentation/computers/camera_software.html#building-libcamera-and-rpicam-apps
-
+* https://medium.com/@gibryonbhojraj/how-to-raspberry-pi-64-bit-with-camera-support-def95f206188
+  - Install raspi-config
