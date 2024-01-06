@@ -130,6 +130,26 @@ https://hub.docker.com/r/arm64v8/ros/
   ```
     sudo apt install v4l-utils
   ```
+  * First need to install and build libcamera:
+  ```
+    sudo apt install -y python3-pip git python3-jinja2
+    sudo apt install -y libboost-dev
+    sudo apt install -y libgnutls28-dev openssl libtiff5-dev pybind11-dev
+    sudo apt install -y qtbase5-dev libqt5core5a libqt5gui5 libqt5widgets5
+    sudo apt install -y meson cmake
+    sudo apt install -y python3-yaml python3-ply
+    sudo apt install -y libglib2.0-dev libgstreamer-plugins-base1.0-dev
+
+    # Checkout libcamera
+    cd
+    git clone https://github.com/raspberrypi/libcamera.git
+    cd libcamera
+    meson setup build --buildtype=release -Dpipelines=rpi/vc4,rpi/pisp -Dipas=rpi/vc4,rpi/pisp -Dv4l2=true -Dgstreamer=enabled -Dtest=false -Dlc-compliance=disabled -Dcam=disabled -Dqcam=disabled -Ddocumentation=disabled -Dpycamera=enabled
+
+    ninja -C build   # use -j 2 on Raspberry Pi 3 or earlier devices
+    sudo ninja -C build install
+    ```
+  
   * Installing rpicam-apps:
   ```
     sudo apt install -y libcamera-dev libjpeg-dev libtiff5-dev
