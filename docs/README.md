@@ -126,6 +126,11 @@ https://hub.docker.com/r/arm64v8/ros/
   vcgencmd get_camera
   ```
 
+  * Install v4l2-ctl
+  ```
+    sudo apt install v4l-utils
+  ```
+
 # Raspi Config file
 * https://www.raspberrypi.com/documentation/computers/config_txt.html
 * https://forums.raspberrypi.com/viewtopic.php?t=310359
