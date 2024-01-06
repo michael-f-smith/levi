@@ -121,7 +121,7 @@ https://hub.docker.com/r/arm64v8/ros/
 * https://medium.com/@gibryonbhojraj/how-to-raspberry-pi-64-bit-with-camera-support-def95f206188
   - Install raspi-config
   - May need to comment out gpu_mem in config.txt
-  - To list the number of connected cameras:
+  - To list the number of connected cameras as seen [here](https://raspberrypi.stackexchange.com/questions/78604/help-my-rasperry-pi-camera-is-not-being-detected#:~:text=The%20camera%20is%20plugged%20into,use%20it%20with%20this%20Pi)
   ```
   vcgencmd get_camera
   ```
