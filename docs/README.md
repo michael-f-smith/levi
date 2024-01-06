@@ -130,6 +130,22 @@ https://hub.docker.com/r/arm64v8/ros/
   ```
     sudo apt install v4l-utils
   ```
+  * Installing rpicam-apps:
+  ```
+    sudo apt install -y libcamera-dev libjpeg-dev libtiff5-dev
+    # https://www.raspberrypi.com/documentation/computers/camera_software.html#building-rpicam-apps
+    sudo apt install -y cmake libboost-program-options-dev libdrm-dev libexif-dev
+    sudo apt install -y meson ninja-build
+    cd
+    git clone https://github.com/raspberrypi/rpicam-apps.git
+    cd rpicam-apps
+    meson setup build -Denable_libav=false -Denable_drm=true -Denable_egl=false -Denable_qt=false -Denable_opencv=true -  Denable_tflite=true
+  meson compile -C build # use -j1 on Raspberry Pi 3 or earlier devices
+  sudo meson install -C build
+  sudo ldconfig # this is only necessary on the first build
+  
+    
+  ```
 
 # Raspi Config file
 * https://www.raspberrypi.com/documentation/computers/config_txt.html
