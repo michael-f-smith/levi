@@ -139,10 +139,10 @@ https://hub.docker.com/r/arm64v8/ros/
     cd
     git clone https://github.com/raspberrypi/rpicam-apps.git
     cd rpicam-apps
-    meson setup build -Denable_libav=false -Denable_drm=true -Denable_egl=false -Denable_qt=false -Denable_opencv=true -  Denable_tflite=true
-  meson compile -C build # use -j1 on Raspberry Pi 3 or earlier devices
-  sudo meson install -C build
-  sudo ldconfig # this is only necessary on the first build
+    meson setup build -Denable_libav=false -Denable_drm=true -Denable_egl=false -Denable_qt=false -Denable_opencv=true -Denable_tflite=true
+    meson compile -C build # use -j1 on Raspberry Pi 3 or earlier devices
+    sudo meson install -C build
+    sudo ldconfig # this is only necessary on the first build
   
     
   ```
