@@ -136,6 +136,13 @@ https://hub.docker.com/r/arm64v8/ros/
     # https://www.raspberrypi.com/documentation/computers/camera_software.html#building-rpicam-apps
     sudo apt install -y cmake libboost-program-options-dev libdrm-dev libexif-dev
     sudo apt install -y meson ninja-build
+  ```
+  * Needs meson >=0.64.0
+  ```
+    pip3 install meson==0.64.0
+  ```
+  * Then run the following:
+  ```
     cd
     git clone https://github.com/raspberrypi/rpicam-apps.git
     cd rpicam-apps
