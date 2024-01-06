@@ -120,10 +120,16 @@ https://hub.docker.com/r/arm64v8/ros/
 * https://www.raspberrypi.com/documentation/computers/camera_software.html#building-libcamera-and-rpicam-apps
 * https://medium.com/@gibryonbhojraj/how-to-raspberry-pi-64-bit-with-camera-support-def95f206188
   - Install raspi-config
-  - 
+  - May need to comment out gpu_mem in config.txt
+  - To list the number of connected cameras:
+  ```
+  vcgencmd get_camera
+  ```
 
 # Raspi Config file
 * https://www.raspberrypi.com/documentation/computers/config_txt.html
 * https://forums.raspberrypi.com/viewtopic.php?t=310359
   - Potentially comment out gpu_mem in config.txt
+  - 
+  
 
