@@ -149,6 +149,21 @@ https://hub.docker.com/r/arm64v8/ros/
     ninja -C build   # use -j 2 on Raspberry Pi 3 or earlier devices
     sudo ninja -C build install
     ```
+
+  # Installing tflite
+  ```
+  # https://lindevs.com/install-precompiled-tensorflow-lite-on-raspberry-pi/
+  wget https://github.com/prepkg/tensorflow-lite-raspberrypi/releases/latest/download/tensorflow-lite_64.deb
+
+  sudo apt install -y ./tensorflow-lite_64.deb
+
+  # Can remove the .deb with:
+  rm -rf tensorflow-lite_64.deb
+  ```
+  ## Installing tflite_runtime
+  ```
+  pip3 install tflite-runtime
+  ```
   
   * Installing rpicam-apps:
   ```
