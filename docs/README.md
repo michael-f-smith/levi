@@ -159,6 +159,9 @@ https://hub.docker.com/r/arm64v8/ros/
 
   # Can remove the .deb with:
   rm -rf tensorflow-lite_64.deb
+
+  # To install a tflite model to test:
+  wget -O model.tflite https://www.dropbox.com/s/b1426ewx13idlr0/simple_linear_regression.tflite?dl=1
   ```
   ## Installing tflite_runtime
   ```
