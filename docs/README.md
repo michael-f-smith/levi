@@ -159,7 +159,7 @@ https://hub.docker.com/r/arm64v8/ros/
   ```
   * Needs meson >=0.64.0
   ```
-    pip3 install meson==0.64.0
+    sudo pip3 install meson==0.64.0 # Needs to be installed using sudo since: https://github.com/mesonbuild/meson/issues/8425
   ```
   * Then run the following:
   ```
