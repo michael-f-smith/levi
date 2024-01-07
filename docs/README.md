@@ -186,6 +186,9 @@ https://hub.docker.com/r/arm64v8/ros/
     # https://www.raspberrypi.com/documentation/computers/camera_software.html#building-rpicam-apps
     sudo apt install -y cmake libboost-program-options-dev libdrm-dev libexif-dev
     sudo apt install -y meson ninja-build
+
+    # Install the following for libav support:
+    sudo apt install libavcodec-dev libavdevice-dev libavformat-dev libswresample-dev
   ```
   
 
