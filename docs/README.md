@@ -130,6 +130,12 @@ https://hub.docker.com/r/arm64v8/ros/
   ```
     sudo apt install v4l-utils
   ```
+
+  * To build libcamera and rpicam-apps, they need meson >=0.64.0
+  ```
+    sudo pip3 install meson==0.64.0 # Needs to be installed using sudo since: https://github.com/mesonbuild/meson/issues/8425
+  ```
+  
   * First need to install and build libcamera:
   ```
     sudo apt install -y python3-pip git python3-jinja2
@@ -175,10 +181,7 @@ https://hub.docker.com/r/arm64v8/ros/
     sudo apt install -y cmake libboost-program-options-dev libdrm-dev libexif-dev
     sudo apt install -y meson ninja-build
   ```
-  * Needs meson >=0.64.0
-  ```
-    sudo pip3 install meson==0.64.0 # Needs to be installed using sudo since: https://github.com/mesonbuild/meson/issues/8425
-  ```
+
   * Then run the following:
   ```
     cd
