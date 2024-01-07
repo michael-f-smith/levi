@@ -169,6 +169,7 @@ https://hub.docker.com/r/arm64v8/ros/
   # To install a tflite model to test:
   wget -O model.tflite https://www.dropbox.com/s/b1426ewx13idlr0/simple_linear_regression.tflite?dl=1
   ```
+  
   ## Installing tflite_runtime
   ```
   pip3 install tflite-runtime
@@ -181,9 +182,11 @@ https://hub.docker.com/r/arm64v8/ros/
     sudo apt install -y cmake libboost-program-options-dev libdrm-dev libexif-dev
     sudo apt install -y meson ninja-build
   ```
+  
 
   * Then run the following:
   ```
+    # Hmm, I appear to be having the same issue: https://forums.raspberrypi.com/viewtopic.php?t=356482
     cd
     git clone https://github.com/raspberrypi/rpicam-apps.git
     cd rpicam-apps
