@@ -131,6 +131,11 @@ https://hub.docker.com/r/arm64v8/ros/
     sudo apt install v4l-utils
   ```
 
+  # Install ffmpeg
+  ```
+  sudo apt install ffmpeg
+  ```
+
   * To build libcamera and rpicam-apps, they need meson >=0.64.0
   ```
     sudo pip3 install meson==0.64.0 # Needs to be installed using sudo since: https://github.com/mesonbuild/meson/issues/8425
