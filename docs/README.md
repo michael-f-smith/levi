@@ -195,6 +195,7 @@ https://hub.docker.com/r/arm64v8/ros/
   * Then run the following:
   ```
     # Hmm, I appear to be having the same issue: https://forums.raspberrypi.com/viewtopic.php?t=356482
+    # Potentially could be a fix for the above: https://stackoverflow.com/questions/61058722/how-can-i-specify-library-path-when-using-meson
     cd
     git clone https://github.com/raspberrypi/rpicam-apps.git
     cd rpicam-apps
