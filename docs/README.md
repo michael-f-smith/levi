@@ -10,7 +10,8 @@ sudo apt install python3-rosdep2
 
 sudo apt-get install build-essential
 
-sudo apt-get install libboost-system-dev
+# Install libcreate dependencies: https://github.com/AutonomyLab/libcreate/tree/a8e274be1559a5c921463629f57d5b6dfeed1583?tab=readme-ov-file#install
+ sudo apt-get install build-essential cmake libboost-system-dev libboost-thread-dev
 ```
 
 Install xtensor-dev
