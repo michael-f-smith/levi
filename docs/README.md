@@ -228,6 +228,9 @@ https://tmuxcheatsheet.com/
 # Install libcreate dependencies: https://github.com/AutonomyLab/libcreate/tree/a8e274be1559a5c921463629f57d5b6dfeed1583?tab=readme-ov-file#install
  sudo apt-get install -y build-essential cmake libboost-system-dev libboost-thread-dev
 
+# Install bondcpp dependency for nav2
+sudo apt-get install -y libbondcpp-dev
+
 # On raspberry pi I deleted the create3_sim package from simulation
 # Manually installed the diagnostics package into the ros folder within the ros workspace using git: https://github.com/ros/diagnostics.git
 ```
