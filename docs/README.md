@@ -229,5 +229,6 @@ https://tmuxcheatsheet.com/
  sudo apt-get install -y build-essential cmake libboost-system-dev libboost-thread-dev
 
 # On raspberry pi I deleted the create3_sim package from simulation
+# Manually installed the diagnostics package into the ros folder within the ros workspace using git: https://github.com/ros/diagnostics.git
 ```
 
