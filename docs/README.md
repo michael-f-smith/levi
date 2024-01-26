@@ -230,6 +230,7 @@ https://tmuxcheatsheet.com/
 
 # Install bondcpp dependency for nav2
 sudo apt-get install -y libbondcpp-dev
+sudo apt-get install -y libboost-program-options-dev
 
 # On raspberry pi I deleted the create3_sim package from simulation
 # Manually installed the diagnostics package into the ros folder within the ros workspace using git: https://github.com/ros/diagnostics.git
