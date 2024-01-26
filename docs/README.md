@@ -219,5 +219,14 @@ https://tmuxcheatsheet.com/
 * https://forums.raspberrypi.com/viewtopic.php?t=310359
   - Potentially comment out gpu_mem in config.txt
   - 
-  
+
+
+# Installing dependencies for building all
+```
+# After building ros2 humble from source
+
+# Install libcreate dependencies: https://github.com/AutonomyLab/libcreate/tree/a8e274be1559a5c921463629f57d5b6dfeed1583?tab=readme-ov-file#install
+ sudo apt-get install -y build-essential cmake libboost-system-dev libboost-thread-dev
+
+```
 
