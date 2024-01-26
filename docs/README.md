@@ -9,6 +9,8 @@ sudo apt install python3-vcstool
 sudo apt install python3-rosdep2
 
 sudo apt-get install build-essential
+
+sudo apt-get install libboost-system-dev
 ```
 
 Install xtensor-dev
