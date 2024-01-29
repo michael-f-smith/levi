@@ -263,5 +263,8 @@ sudo apt-get install libatlas-base-dev
 sudo apt-get install libeigen3-dev
 # SuiteSparse (optional)
 sudo apt-get install libsuitesparse-dev
+
+# To skip warnings as errors:
+colcon build --symlink-install --cmake-args -DCMAKE_CXX_FLAGS="-w"
 ```
 
