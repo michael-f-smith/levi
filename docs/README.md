@@ -249,6 +249,7 @@ git clone --branch ros2 https://github.com/ros/bond_core.git
 ## Install dependencies for nav2:
 sudo apt-get install -y libceres-dev    # Ceres
 sudo apt-get install -y libxtensor-dev  # xtensor
+sudo apt-get install -y libompl-dev     # ompl
 
 # Install ceres-solver
 # http://ceres-solver.org/installation.html
