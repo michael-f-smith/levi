@@ -234,5 +234,33 @@ sudo apt-get install -y libboost-program-options-dev
 
 # On raspberry pi I deleted the create3_sim package from simulation
 # Manually installed the diagnostics package into the ros folder within the ros workspace using git: https://github.com/ros/diagnostics.git
+
+# Building nav2:
+sudo apt-get install -y libgraphicsmagick++1-dev
+# Need to install additional ros packages: could add them to a .repos file or just use git
+
+# Behaviortree_cpp_v3
+git clone --branch v3.8 https://github.com/BehaviorTree/BehaviorTree.CPP.git
+git clone --branch humble https://github.com/ros-planning/navigation2.git
+git clone --branch ros2 https://github.com/ros/angles.git
+git clone --branch ros2 https://github.com/ros/bond_core.git
+
+
+## Install dependencies for nav2:
+sudo apt-get install -y libceres-dev    # Ceres
+sudo apt-get install -y libxtensor-dev  # xtensor
+
+# Install ceres-solver
+# http://ceres-solver.org/installation.html
+# CMake
+sudo apt-get install cmake
+# google-glog + gflags
+sudo apt-get install libgoogle-glog-dev libgflags-dev
+# Use ATLAS for BLAS & LAPACK
+sudo apt-get install libatlas-base-dev
+# Eigen3
+sudo apt-get install libeigen3-dev
+# SuiteSparse (optional)
+sudo apt-get install libsuitesparse-dev
 ```
 
