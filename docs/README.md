@@ -244,6 +244,7 @@ git clone --branch v3.8 https://github.com/BehaviorTree/BehaviorTree.CPP.git
 git clone --branch humble https://github.com/ros-planning/navigation2.git
 git clone --branch ros2 https://github.com/ros/angles.git
 git clone --branch ros2 https://github.com/ros/bond_core.git
+git clone --branch humble https://github.com/ros-perception/vision_opencv  # For anv2_waypoint_follower
 
 
 ## Install dependencies for nav2:
