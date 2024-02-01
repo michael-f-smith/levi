@@ -252,6 +252,7 @@ sudo apt-get install -y libceres-dev    # Ceres
 sudo apt-get install -y libxtensor-dev  # xtensor
 sudo apt-get install -y libompl-dev     # ompl
 sudo apt-get install libboost-python-dev # CV_bridge
+sudo apt-get install libgeographiclib-dev # robot_localization
 # Yeah probably just do the following next time:
 
 source <ros_ws>/install/setup.bash
