@@ -283,3 +283,6 @@ sudo apt-get install libsuitesparse-dev
 colcon build --symlink-install --cmake-args -DCMAKE_CXX_FLAGS="-w"
 ```
 
+Hardware:
+
+https://learn.adafruit.com/adafruit-bno055-absolute-orientation-sensor/pinouts
