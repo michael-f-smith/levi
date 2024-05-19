@@ -289,3 +289,4 @@ https://learn.adafruit.com/adafruit-bno055-absolute-orientation-sensor/pinouts
 
 
 # Modified netplan back to original
+* To change static ip, use /etc/dhcpcd.conf instead
