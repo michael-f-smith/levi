@@ -27,7 +27,7 @@ PORT = "/dev/ttyUSB0"
 adapter = PyRoombaAdapter(PORT)
 
 
-print("Keys: w, a, s, d")
+print("Keys: w, a, s, d; Any other other key to stop; c to end")
 #inp = input("Enter a key and then press ENTER: ")
 start = time.time()
 
