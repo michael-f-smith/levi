@@ -18,4 +18,4 @@
 	url = https://github.com/AutonomyLab/create_robot.git
 [submodule "src/dependencies/ros2_bno055"]
 	path = src/dependencies/ros2_bno055
-	url = https://github.com/process1183/ros2_bno055.git
+	url = https://github.com/michael-f-smith/ros2_bno055.git
