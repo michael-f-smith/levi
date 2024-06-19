@@ -290,3 +290,8 @@ https://learn.adafruit.com/adafruit-bno055-absolute-orientation-sensor/pinouts
 
 # Modified netplan back to original
 * To change static ip, use /etc/dhcpcd.conf instead
+
+
+# Links:
+
+* Micro USB DIY Connectors: https://www.amazon.com/diymore-Micro-Connector-Plastic-Cover/dp/B01M0KVDPQ?th
