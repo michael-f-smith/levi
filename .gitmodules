@@ -19,3 +19,6 @@
 [submodule "src/dependencies/ros2_bno055"]
 	path = src/dependencies/ros2_bno055
 	url = https://github.com/michael-f-smith/ros2_bno055.git
+[submodule "docker/ros2-cross-compilation"]
+	path = docker/ros2-cross-compilation
+	url = https://github.com/irobot-ros/ros2-cross-compilation.git
