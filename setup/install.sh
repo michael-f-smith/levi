@@ -58,7 +58,7 @@ rosdep install --from-paths src --ignore-src -y --skip-keys "fastcdr rti-connext
 
 # Build workspace
 cd ~/ros2_jazzy/
-colcon build --symlink-install
+sudo colcon build --merge-install --install-base "/opt/ros/jazzy"
 
 
 
