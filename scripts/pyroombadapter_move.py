@@ -5,7 +5,7 @@ from time import sleep
 import math
 from pyroombaadapter import PyRoombaAdapter
 
-PORT = "/dev/ttyAMA0"
+PORT = "/dev/ttyUSB0" #"/dev/ttyAMA0"
 adapter = PyRoombaAdapter(PORT)
 adapter.move(0.2, math.radians(0.0))  # go straight
 sleep(1.0)
