@@ -1,4 +1,5 @@
 # Log Roomba Sensor Data to InfluxDB
+import os
 import time
 import pytz
 import datetime
@@ -21,11 +22,11 @@ def init_adapter():
 
 # initialize the influxdb client
 def init_client():
-    host = ""
+    host = os.environ.get('INFLUXDB_HOST')
     port = 8086
-    user = ""
-    password = ""
-    database = ""
+    user = os.environ.get('INFLUXDB_USER')
+    password = os.environ.get('INFLUXDB_PASSWORD')
+    database = os.environ.get('INFLUXDB_DATABASE')
     client = InfluxDBClient(host, port, user, password, database)
     return client
 
