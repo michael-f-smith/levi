@@ -1,6 +1,14 @@
-from flask import Flask, Response
+import requests
+from flask import Flask, Response, request, render_template
 from picamera2 import Picamera2
 import cv2
+
+# Roomba adapter
+# from pyroombaadapter import PyRoombaAdapter
+
+# Adapter setup
+PORT = "/dev/ttyUSB0"
+#adapter = PyRoombaAdapter(PORT)
 
 ### You can donate at https://www.buymeacoffee.com/mmshilleh 
 # https://www.instructables.com/How-to-Stream-Video-From-Raspberry-Pi-to-Local-USB/
@@ -21,6 +29,21 @@ def generate_frames():
 @app.route('/video_feed')
 def video_feed():
     return Response(generate_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
+
+@app.route("/", methods=["GET", "POST"])
+def index():
+    if request.method == "POST":
+        if request.form["my_button"] == "button1":
+            # Action for button 1
+            message = "Button 1 was clicked!"
+        elif request.form["my_button"] == "button2":
+            # Action for button 2
+            message = "Button 2 was clicked!"
+        else:
+            message = "No button clicked."
+        return render_template("index.html", message=message)
+    return render_template("index.html", message="")
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask Buttons</title>
+</head>
+<body>
+    <form method="POST" action="/">
+        <button type="submit" name="my_button" value="button1">Button 1</button>
+        <button type="submit" name="my_button" value="button2">Button 2</button>
+    </form>
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+</body>
+</html>
