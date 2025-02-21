@@ -8,4 +8,5 @@ sudo apt install -y vim \
 
 
 # Install python packages
-pip install pyroombaadapter --break-system-packages 
+pip install pyroombaadapter --break-system-packages
+pip install getch --break-system-packages

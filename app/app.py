@@ -4,11 +4,12 @@ from picamera2 import Picamera2
 import cv2
 
 # Roomba adapter
-# from pyroombaadapter import PyRoombaAdapter
+from pyroombaadapter import PyRoombaAdapter
+import math
 
 # Adapter setup
 PORT = "/dev/ttyUSB0"
-#adapter = PyRoombaAdapter(PORT)
+adapter = PyRoombaAdapter(PORT)
 
 ### You can donate at https://www.buymeacoffee.com/mmshilleh 
 # https://www.instructables.com/How-to-Stream-Video-From-Raspberry-Pi-to-Local-USB/
@@ -35,19 +36,24 @@ def index():
     if request.method == "POST":
         if request.form["my_button"] == "button1":
             # Action for button 1
-            message = "Button 1 was clicked!"
+            message = "Button 1 was clicked! Moving forward"
+            adapter.move(0.2, math.radians(0.0))
         elif request.form["my_button"] == "button2":
             # Action for button 2
-            message = "Button 2 was clicked!"
+            message = "Button 2 was clicked! Yawing left"
+            adapter.move(0, math.radians(20))
         elif request.form["my_button"] == "button3":
             # Action for button 3
-            message = "Button 3 was clicked!"
+            message = "Button 3 was clicked! Stopping"
+            adapter.move(0, math.radians(0.0))
         elif request.form["my_button"] == "button4":
             # Action for button 4
-            message = "Button 4 was clicked!"
+            message = "Button 4 was clicked! Yawing right"
+            adapter.move(0, math.radians(-20))
         elif request.form["my_button"] == "button5":
             # Action for button 4
-            message = "Button 5 was clicked!"
+            message = "Button 5 was clicked! Moving backward"
+            adapter.move(-0.2, math.radians(0.0))
         else:
             message = "No button clicked."
         return render_template("index.html", message=message)
