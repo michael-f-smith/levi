@@ -39,6 +39,12 @@ def index():
         elif request.form["my_button"] == "button2":
             # Action for button 2
             message = "Button 2 was clicked!"
+        elif request.form["my_button"] == "button3":
+            # Action for button 3
+            message = "Button 3 was clicked!"
+        elif request.form["my_button"] == "button4":
+            # Action for button 4
+            message = "Button 4 was clicked!"
         else:
             message = "No button clicked."
         return render_template("index.html", message=message)
