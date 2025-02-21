@@ -5,10 +5,62 @@
 </head>
 <body>
     <form method="POST" action="/">
-        <button type="submit" name="my_button" value="button1">Button 1</button>
-        <button type="submit" name="my_button" value="button2">Button 2</button>
-        <button type="submit" name="my_button" value="button3">Button 3</button>
-	<button type="submit" name="my_button" value="button4">Button 4</button>
+      <div class="container">
+	      <button class="button button1" type="submit" name="my_button" value="button1">Button 1</button>
+        <button class="button button2" type="submit" name="my_button" value="button2">Button 2</button>
+        <button class="button button3" type="submit" name="my_button" value="button3">Button 3</button>
+        <button class="button button4" type="submit" name="my_button" value="button4">Button 4</button>
+	      <button class="button button5" type="submit" name="my_button" value="button5">Button 5</button>
+	      <!-- <button class="button button6" type="submit" name="my_button" value="button6">Button 6</button> -->
+	    </div>
+	    <style>
+        .container {
+          display: grid;
+          grid-template-columns: 33.33% 33.33% 33.33%;
+          grid-template-rows: 33.33% 33.33% 33.33%;
+          width: 500px;
+          height: 200px;
+          background: #87CEEB;
+        }
+
+        .button {
+          margin: 20px;
+        }
+
+        .button:nth-child(1) {
+          grid-column-start: 2;
+          grid-column-end: 3;
+        }
+
+        .button:nth-child(2) {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 2;
+          grid-row-end: 3;
+        }
+
+        .button:nth-child(3) {
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: 2;
+          grid-row-end: 3;
+          background: red;
+        }
+
+        .button:nth-child(4) {
+          grid-column-start: 3;
+          grid-column-end: 4;
+          grid-row-start: 2;
+          grid-row-end: 3;
+        }
+
+        .button:nth-child(5) {
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: 3;
+          grid-row-end: 4;
+        }
+      </style>
     </form>
     {% if message %}
         <p>{{ message }}</p>
