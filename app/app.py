@@ -10,7 +10,7 @@ import math
 # Adapter setup
 PORT = "/dev/ttyUSB0"
 adapter = PyRoombaAdapter(PORT)
-# adapter.change_mode_to_safe() # Needed for move
+adapter.change_mode_to_safe() # Needed for movement
 print(f"Mode: {adapter.request_oi_mode()}")
 
 
@@ -57,6 +57,15 @@ def index():
             # Action for button 4
             message = "Button 5 was clicked! Moving backward"
             adapter.move(-0.2, math.radians(0.0))
+        elif request.form["my_button"] == "button6":
+            message = "Button 6 was clicked! Sending home"
+            adapter.start_seek_dock()
+        elif request.form["my_button"] == "button7":
+            message = "Button 7 was clicked! Starting spot clean"
+            adapter.start_spot_cleaning()
+        elif request.form["my_button"] == "button8":
+            adapter.change_mode_to_safe()
+            message = "Button 8 was clicked. Changing mode to safe. Mode:" + str(adapter.request_oi_mode())
         else:
             message = "No button clicked."
         return render_template("index.html", message=message)
