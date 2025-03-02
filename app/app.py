@@ -10,6 +10,9 @@ import math
 # Adapter setup
 PORT = "/dev/ttyUSB0"
 adapter = PyRoombaAdapter(PORT)
+# adapter.change_mode_to_safe() # Needed for move
+print(f"Mode: {adapter.request_oi_mode()}")
+
 
 ### You can donate at https://www.buymeacoffee.com/mmshilleh 
 # https://www.instructables.com/How-to-Stream-Video-From-Raspberry-Pi-to-Local-USB/
