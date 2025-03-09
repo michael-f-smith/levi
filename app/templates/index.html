@@ -4,6 +4,9 @@
     <title>Flask Buttons</title>
 </head>
 <body>
+    <h1>Live Video Feed</h1>
+    <img src="{{ url_for('video_feed') }}" alt="Video Stream">
+    <h2>Controls</h2>	
     <form method="POST" action="/">
       <div class="container">
 	      <button class="button button1" type="submit" name="my_button" value="button1">Button 1</button>
