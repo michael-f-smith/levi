@@ -1,4 +1,5 @@
 from influxdb import InfluxDBClient
+import os
 
 json_body = [
     {
@@ -13,11 +14,11 @@ json_body = [
         }
     }
 ]
-host = ""
+host = os.environ['INFLUXDB_HOST']
 port = 8086
-user = ""
-password = ""
-database = ""
+user = os.environ['INFLUXDB_USER']
+password = os.environ['INFLUXDB_PASSWORD']
+database = os.environ['INFLUXDB_DATABASE']
 client = InfluxDBClient(host, port, user, password, database)
 # client.create_database('example')
 client.write_points(json_body)
